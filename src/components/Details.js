@@ -35,7 +35,7 @@ function Details() {
     <div>
       <div className="moviedetail">
         {movie.image!=="https://image.tmdb.org/t/p/w500null" ? <img src={movie.image} alt={movie.overview}/> : 
-        <img src={"https://images.unsplash.com/photo-1560109947-543149eceb16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"} />
+        <img src={"https://images.unsplash.com/photo-1560109947-543149eceb16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"} alt={movie.title}/>
         }
         <div className="details">
           <h1>{movie.title}</h1>

@@ -44,7 +44,7 @@ function App() {
       <main>
         <SearchForm setSearchTerm={setSearchTerm} />
 
-        {movies.length != 0 ?
+        {movies.length !== 0 ?
           <div className="movie-container">
             {movies.map((movie) => {
               return <Movie key={movie.id} {...movie} />;
